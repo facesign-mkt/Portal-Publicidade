@@ -4,7 +4,7 @@ export const CONTENT = {
   hero: {
     overline: "Outdoor Digital em Votuporanga",
     title: "Coloque a sua marca onde Votuporanga não para de olhar.",
-    subtitle: "Dois painéis digitais nos cruzamentos mais movimentados da cidade. Atenção total para o seu negócio no trânsito, sem competir com a tela do celular.",
+    subtitle: "Dois painéis digitais nos cruzamentos mais movimentados da cidade. Atenção total para o seu negócio no trânsito, <strong>sem competir com a tela do celular.</strong>",
     cta: "Falar no WhatsApp",
     whatsappMessage: "Vim do site - quero saber mais sobre os painéis",
   },
