@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Manrope", sans-serif;
+  --color-brand-base: #0A1628;
+  --color-brand-elevated: #152642;
+  --color-brand-accent: #1F3A5F;
+  --color-brand-primary: #D4AF37;
+  --color-brand-secondary: #F4C95D;
+  --color-brand-text: #F5F2E8;
+  --color-brand-muted: #A5B0BD;
+  --color-whatsapp: #25D366;
+}
+
+body {
+  background-color: var(--color-brand-base);
+  color: var(--color-brand-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-sans);
+}
