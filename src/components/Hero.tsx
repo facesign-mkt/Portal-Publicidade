@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, ChevronDown } from 'lucide-react';
-import { CONTENT, WHATSAPP_BASE_URL } from '../constants/content';
+import { CONTENT, WHATSAPP_LINK } from '../constants/content';
 import { fadeInUp, viewportSettings } from '../hooks/useScrollAnimation';
 
 const IMAGES = [
@@ -56,7 +56,7 @@ export function Hero() {
           
           <motion.div variants={fadeInUp}>
             <a 
-              href={`${WHATSAPP_BASE_URL}${encodeURIComponent(CONTENT.hero.whatsappMessage)}`}
+              href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-8 py-4 bg-[#25D366] text-white font-black rounded-xl transition-all shadow-[0_0_30px_rgba(37,211,102,0.3)] animate-[pulse_2s_cubic-bezier(0.4,0,0.6,1)_infinite] hover:bg-[#1EBE5D] hover:animate-none"

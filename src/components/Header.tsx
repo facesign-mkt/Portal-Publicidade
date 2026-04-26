@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { CONTENT, WHATSAPP_BASE_URL } from '../constants/content';
+import { CONTENT, WHATSAPP_LINK } from '../constants/content';
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -38,10 +38,10 @@ export function Header() {
         </div>
 
         <a 
-          href={`${WHATSAPP_BASE_URL}Vim do cabeçalho do site`}
+          href={WHATSAPP_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden sm:inline-flex items-center justify-center px-6 py-3 bg-brand-primary hover:bg-brand-secondary text-brand-base font-bold rounded-xl transition-all shadow-[0_4px_14px_rgba(212,175,55,0.4)] hover:shadow-[0_6px_20px_rgba(252,201,93,0.6)]"
+          className="inline-flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 text-xs sm:text-base bg-brand-primary hover:bg-brand-secondary text-brand-base font-bold rounded-xl transition-all shadow-[0_4px_14px_rgba(212,175,55,0.4)] hover:shadow-[0_6px_20px_rgba(252,201,93,0.6)]"
         >
           Anunciar agora
         </a>

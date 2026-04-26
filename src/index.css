@@ -13,6 +13,12 @@
   --color-whatsapp: #25D366;
 }
 
+@layer utilities {
+  .container {
+    max-width: 1080px !important;
+  }
+}
+
 body {
   background-color: var(--color-brand-base);
   color: var(--color-brand-text);

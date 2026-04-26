@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { MessageCircle, Wand2, MonitorPlay, ArrowRight } from 'lucide-react';
-import { CONTENT, WHATSAPP_BASE_URL } from '../constants/content';
+import { CONTENT, WHATSAPP_LINK } from '../constants/content';
 import { fadeInUp, viewportSettings, staggerContainer } from '../hooks/useScrollAnimation';
 import { clsx } from 'clsx';
 
@@ -73,7 +73,7 @@ export function HowItWorks() {
           className="text-center mt-16"
         >
           <a 
-            href={`${WHATSAPP_BASE_URL}${encodeURIComponent(CONTENT.howItWorks.whatsappMessage)}`}
+            href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-brand-secondary font-bold hover:text-white transition-colors group"

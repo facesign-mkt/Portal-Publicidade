@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
-import { CONTENT, WHATSAPP_BASE_URL } from '../constants/content';
+import { CONTENT, WHATSAPP_LINK } from '../constants/content';
 import { fadeInUp, viewportSettings } from '../hooks/useScrollAnimation';
 import { AnimatedCounter } from './AnimatedCounter';
 import { clsx } from "clsx";
@@ -16,7 +16,7 @@ export function ImpactCalculator() {
   const equivalence = Math.round(totalImpressions / POPULATION);
   
   const diffContext = bothPanels ? 'nos 2 painéis' : 'em 1 painel';
-  const whatsappLink = `${WHATSAPP_BASE_URL}${encodeURIComponent(CONTENT.calculator.getWhatsappMessage(months, diffContext, totalImpressions))}`;
+  const whatsappLink = WHATSAPP_LINK;
 
   return (
     <section className="py-24 bg-brand-elevated relative overflow-hidden">

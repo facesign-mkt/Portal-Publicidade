@@ -38,10 +38,6 @@ export function PainelCard({ painel }: PainelCardProps) {
       </div>
 
       <div className="px-6 pb-6 pt-8 flex flex-col flex-grow z-20 relative bg-brand-base">
-        <h4 className="flex items-center gap-2 text-white font-bold mb-4 text-sm tracking-wider">
-          <span className="w-2 h-2 bg-brand-primary rounded-full"></span>
-          Apresentação Técnica
-        </h4>
         <p className="text-brand-text opacity-90 mb-6 text-sm flex-grow">
           {painel.techSpecs}
         </p>

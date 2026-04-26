@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Zap } from 'lucide-react';
-import { CONTENT, WHATSAPP_BASE_URL } from '../constants/content';
+import { CONTENT, WHATSAPP_LINK } from '../constants/content';
 import { fadeInUp, viewportSettings } from '../hooks/useScrollAnimation';
 
 export function FinalCTA() {
@@ -36,7 +36,7 @@ export function FinalCTA() {
           
           <motion.div variants={fadeInUp} className="flex flex-col items-center gap-4">
             <a 
-              href={`${WHATSAPP_BASE_URL}${encodeURIComponent(CONTENT.finalCta.whatsappMessage)}`}
+              href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="group relative inline-flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-5 bg-brand-primary text-brand-base font-black text-lg rounded-xl shadow-[0_0_30px_rgba(212,175,55,0.3)] animate-[pulse_2s_cubic-bezier(0.4,0,0.6,1)_infinite] hover:bg-brand-secondary hover:animate-none transition-all"

@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import { MessageCircle } from 'lucide-react';
-import { WHATSAPP_BASE_URL, CONTENT } from '../constants/content';
+import { WHATSAPP_LINK, CONTENT } from '../constants/content';
 
 export function WhatsAppFloat() {
   const { scrollY } = useScroll();
@@ -13,7 +13,7 @@ export function WhatsAppFloat() {
   return (
     <motion.a
       style={{ opacity, scale, pointerEvents } as any}
-      href={`${WHATSAPP_BASE_URL}${encodeURIComponent(CONTENT.floatWhatsapp.whatsappMessage)}`}
+      href={WHATSAPP_LINK}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-8 right-8 z-[100] group"

@@ -1,5 +1,4 @@
-export const WHATSAPP_NUMBER = "5517981313671";
-export const WHATSAPP_BASE_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=`;
+export const WHATSAPP_LINK = "https://wa.me/5517981313671?text=Gostaria%20de%20um%20or%C3%A7amento%20dos%20pain%C3%A9is%20de%20publicidade!";
 
 export const CONTENT = {
   hero: {

@@ -1,4 +1,4 @@
-import { CONTENT, WHATSAPP_BASE_URL } from "../constants/content";
+import { CONTENT, WHATSAPP_LINK } from "../constants/content";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -12,7 +12,7 @@ export function Footer() {
             <img 
               src="https://enaparry.sirv.com/Painel%20Publicidade/logotipo-03.jpg" 
               alt="Portal Publicidade Logo" 
-              className="h-24 md:h-32 w-auto mb-6 object-contain"
+              className="h-24 md:h-32 w-auto mb-6 object-contain rounded-2xl"
             />
             <p className="text-[10px] font-bold uppercase tracking-widest text-brand-muted mb-6">{CONTENT.footer.tagline}</p>
             <p className="max-w-xs">{CONTENT.footer.address}</p>
@@ -23,7 +23,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a 
-                  href={`${WHATSAPP_BASE_URL}Olá, vim do rodapé do site`}
+                  href={WHATSAPP_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-brand-secondary transition-colors"
